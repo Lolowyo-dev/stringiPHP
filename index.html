@@ -17,107 +17,131 @@
 // Funkcja strlen() zwraca długość ciągu znaków
 $string = "Witaj świecie";
 echo strlen($string); // wypisuje 11
-<hr>
+</pre>
+<pre>
 // Funkcja lcfirst() zamienia pierwszą literę ciągu na małą
 $string = "Witaj świecie";
 echo lcfirst($string); // wypisuje "witaj świecie"
-<hr>
+</pre>
+<pre>
 // Funkcja ltrim() usuwa białe znaki lub określone znaki z lewej strony ciągu
 $string = "   Witaj świecie";
 echo ltrim($string); // wypisuje "Witaj świecie"
-<hr>
+</pre>
+<pre>
 // Funkcja mb_strlen() zwraca długość wielobajtowego ciągu znaków
 $string = "こんにちは世界";
 echo mb_strlen($string, 'UTF-8'); // wypisuje 9
-<hr>
+</pre>
+<pre>
 // Funkcja nl2br() wstawia znaki końca linii HTML przed wszystkimi znakami nowej linii w ciągu
 $string = "Witaj\nświecie";
 echo nl2br($string); // wypisuje "Witaj&lt;br&gt;świecie"
-<hr>
+</pre>
+<pre>
 // Funkcja printf() wypisuje sformatowany ciąg
 $liczba = 123;
 printf("Liczba: %d", $liczba); // wypisuje "Liczba: 123"
-<hr>
+</pre>
+<pre>
 // Funkcja rtrim() usuwa białe znaki lub określone znaki z prawej strony ciągu
 $string = "Witaj świecie   ";
 echo rtrim($string); // wypisuje "Witaj świecie"
-<hr>
+</pre>
+<pre>
 // Funkcja str_ireplace() zamienia niektóre znaki w ciągu (bez uwzględniania wielkości liter)
 $string = "Witaj Świecie";
 echo str_ireplace("świecie", "tam", $string); // wypisuje "Witaj tam"
-<hr>
+</pre>
+<pre>
 // Funkcja str_replace() zamienia niektóre znaki w ciągu
 $string = "Witaj świecie";
 echo str_replace("świecie", "tam", $string); // wypisuje "Witaj tam"
-<hr>
+</pre>
+<pre>
 // Funkcja strcasecmp() porównuje długość dwuch ciągów (bez uwzględniania wielkości liter)
 // różnica pierwszego napotkanego innego znaku według pozycji w alfabecie np. a, c (różnica: -2)
 $string1 = "witaj";
 $string2 = "Witaj";
 echo strcasecmp($string1, $string2); // wypisuje 0
-<hr>
+</pre>
+<pre>
 // Funkcja strcmp() porównuje dwa ciągi
 // różnica pierwszego napotkanego innego znaku według pozycji w alfabecie np. b, a (różnica: 1)
 $string1 = "witaj";
 $string2 = "Witaj";
 echo strcmp($string1, $string2); // wypisuje 32
-<hr>
+</pre>
+<pre>
 // Funkcja stripos() znajduje pozycję pierwszego wystąpienia ciągu (bez uwzględniania wielkości liter)
 $string = "Witaj świecie";
 echo stripos($string, "świat"); // wypisuje 6
-<hr>
+</pre>
+<pre>
 // Funkcja stristr() znajduje pierwsze wystąpienie ciągu (bez uwzględniania wielkości liter) i wypisuje reszte
 $string = "Witaj świecie, cześć";
 echo stristr($string, "świat"); // wypisuje "świecie, cześć"
-<hr>
+</pre>
+<pre>
 // funkcja strncmp() porównuje dwa ciągi znaków na podstawie określonej długości
 // to samo co strcmp tylko do n znaku
 $string1 = "hello";
 $string2 = "Hello";
 echo strncmp($string1, $string2, 4); // wypisuje 0
-<hr>
+</pre>
+<pre>
 // funkcja strrpos() znajduje pozycję ostatniego wystąpienia ciągu znaków
 $string = "Hello World";
 echo strrpos($string, "o"); // wypisuje 7
-<hr>
+</pre>
+<pre>
 // funkcja strpos() znajduje pozycję pierwszego wystąpienia ciągu znaków
 $string = "Hello World";
 echo strpos($string, "o"); // wypisuje 4
-<hr>
+</pre>
+<pre>
 // funkcja strtolower() konwertuje ciąg znaków na małe litery
 $string = "Hello World";
 echo strtolower($string); // wypisuje "hello world"
-<hr>
+</pre>
+<pre>
 // funkcja strtoupper() konwertuje ciąg znaków na duże litery
 $string = "Hello World";
 echo strtoupper($string); // wypisuje "HELLO WORLD"
-<hr>
+</pre>
+<pre>
 // funkcja strstr() znajduje pierwsze wystąpienie ciągu znaków
 $string = "Hello World";
 echo strstr($string, "o"); // wypisuje "o World"
-<hr>
+</pre>
+<pre>
 // funkcja strtr() tłumaczy określone znaki
 $string = "Witaj świecie";
 $trans = array("Witaj" => "Cześć", "świecie" => "tam");
 echo strtr($string, $trans); // wypisuje "Cześć tam"
-<hr>
+</pre>
+<pre>
 // funkcja substr() zwraca część ciągu znaków
 $string = "Witaj świecie";
 echo substr($string, 0, 5); // wypisuje "Witaj"
-<hr>
+</pre>
+<pre>
 // funkcja substr_replace() zamienia część ciągu znaków
 $string = "Witaj świecie";
 $replacement = "Do widzenia";
 echo substr_replace($string, $replacement, 0, 5); // wypisuje "Do widzenia świecie"
-<hr>
+</pre>
+<pre>
 // funkcja trim() usuwa białe znaki lub określone znaki z obu stron ciągu znaków
 $string = " Witaj świecie ";
 echo trim($string); // wypisuje "Witaj świecie"
-<hr>
+</pre>
+<pre>
 // funkcja ucfirst() zmienia pierwszy znak ciągu znaków na dużą literę
 $string = "witaj świecie";
 echo ucfirst($string); // wypisuje "Witaj świecie"
-<hr>
+</pre>
+<pre>
 // funkcja ucwords() zmienia pierwszy znak każdego słowa na dużą literę
 $string = "witaj świecie";
 echo ucwords($string); // wypisuje "Witaj Świecie"
