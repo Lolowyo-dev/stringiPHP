@@ -17,131 +17,131 @@
 // Funkcja strlen() zwraca długość ciągu znaków
 $string = "Witaj świecie";
 echo strlen($string); // wypisuje 11
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja lcfirst() zamienia pierwszą literę ciągu na małą
 $string = "Witaj świecie";
 echo lcfirst($string); // wypisuje "witaj świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja ltrim() usuwa białe znaki lub określone znaki z lewej strony ciągu
 $string = "   Witaj świecie";
 echo ltrim($string); // wypisuje "Witaj świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja mb_strlen() zwraca długość wielobajtowego ciągu znaków
 $string = "こんにちは世界";
 echo mb_strlen($string, 'UTF-8'); // wypisuje 9
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja nl2br() wstawia znaki końca linii HTML przed wszystkimi znakami nowej linii w ciągu
 $string = "Witaj\nświecie";
 echo nl2br($string); // wypisuje "Witaj&lt;br&gt;świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja printf() wypisuje sformatowany ciąg
 $liczba = 123;
 printf("Liczba: %d", $liczba); // wypisuje "Liczba: 123"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja rtrim() usuwa białe znaki lub określone znaki z prawej strony ciągu
 $string = "Witaj świecie   ";
 echo rtrim($string); // wypisuje "Witaj świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja str_ireplace() zamienia niektóre znaki w ciągu (bez uwzględniania wielkości liter)
 $string = "Witaj Świecie";
 echo str_ireplace("świecie", "tam", $string); // wypisuje "Witaj tam"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja str_replace() zamienia niektóre znaki w ciągu
 $string = "Witaj świecie";
 echo str_replace("świecie", "tam", $string); // wypisuje "Witaj tam"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja strcasecmp() porównuje długość dwuch ciągów (bez uwzględniania wielkości liter)
 // różnica pierwszego napotkanego innego znaku według pozycji w alfabecie np. a, c (różnica: -2)
 $string1 = "witaj";
 $string2 = "Witaj";
 echo strcasecmp($string1, $string2); // wypisuje 0
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja strcmp() porównuje dwa ciągi
 // różnica pierwszego napotkanego innego znaku według pozycji w alfabecie np. b, a (różnica: 1)
 $string1 = "witaj";
 $string2 = "Witaj";
 echo strcmp($string1, $string2); // wypisuje 32
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja stripos() znajduje pozycję pierwszego wystąpienia ciągu (bez uwzględniania wielkości liter)
 $string = "Witaj świecie";
 echo stripos($string, "świat"); // wypisuje 6
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // Funkcja stristr() znajduje pierwsze wystąpienie ciągu (bez uwzględniania wielkości liter) i wypisuje reszte
 $string = "Witaj świecie, cześć";
 echo stristr($string, "świat"); // wypisuje "świecie, cześć"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strncmp() porównuje dwa ciągi znaków na podstawie określonej długości
 // to samo co strcmp tylko do n znaku
 $string1 = "hello";
 $string2 = "Hello";
 echo strncmp($string1, $string2, 4); // wypisuje 0
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strrpos() znajduje pozycję ostatniego wystąpienia ciągu znaków
 $string = "Hello World";
 echo strrpos($string, "o"); // wypisuje 7
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strpos() znajduje pozycję pierwszego wystąpienia ciągu znaków
 $string = "Hello World";
 echo strpos($string, "o"); // wypisuje 4
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strtolower() konwertuje ciąg znaków na małe litery
 $string = "Hello World";
 echo strtolower($string); // wypisuje "hello world"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strtoupper() konwertuje ciąg znaków na duże litery
 $string = "Hello World";
 echo strtoupper($string); // wypisuje "HELLO WORLD"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strstr() znajduje pierwsze wystąpienie ciągu znaków
 $string = "Hello World";
 echo strstr($string, "o"); // wypisuje "o World"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja strtr() tłumaczy określone znaki
 $string = "Witaj świecie";
 $trans = array("Witaj" => "Cześć", "świecie" => "tam");
 echo strtr($string, $trans); // wypisuje "Cześć tam"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja substr() zwraca część ciągu znaków
 $string = "Witaj świecie";
 echo substr($string, 0, 5); // wypisuje "Witaj"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja substr_replace() zamienia część ciągu znaków
 $string = "Witaj świecie";
 $replacement = "Do widzenia";
 echo substr_replace($string, $replacement, 0, 5); // wypisuje "Do widzenia świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja trim() usuwa białe znaki lub określone znaki z obu stron ciągu znaków
 $string = " Witaj świecie ";
 echo trim($string); // wypisuje "Witaj świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja ucfirst() zmienia pierwszy znak ciągu znaków na dużą literę
 $string = "witaj świecie";
 echo ucfirst($string); // wypisuje "Witaj świecie"
-</pre>
-<pre>
+</code>
+<code class="language-php">
 // funkcja ucwords() zmienia pierwszy znak każdego słowa na dużą literę
 $string = "witaj świecie";
 echo ucwords($string); // wypisuje "Witaj Świecie"
