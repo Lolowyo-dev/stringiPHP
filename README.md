@@ -1,1 +1,2 @@
 # stringiPHP
+TAK TO SA STRINGI
